@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:textSize="30dp"
+        android:text="registration form"
+        android:background="@color/purple_500"
+        >
+
+    </TextView>
+
+    <EditText
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name:"
+        android:id="@+id/edirgstrname"
+        >
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="last Name:"
+        android:id="@+id/edirgstrlastname"
+        >
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email:"
+        android:id="@+id/edirgstremail"
+        >
+    </EditText>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password:"
+        android:id="@+id/edirgstrpassword"
+        >
+    </EditText>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/rgstrbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register">
+    </Button>
+    <Button
+        android:layout_marginTop="50dp"
+        android:id="@+id/jmploginbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="jump to login">
+    </Button>
+
+</LinearLayout>

@@ -1,18 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:orientation="vertical">
 
-    <TextView
+    <Button
+        android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Logout"
+        android:layout_marginLeft="300dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="55dp"
+        android:gravity="center"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/tvfirstname"
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="First Name:"
+        android:textSize="15dp"
+
+        ></TextView>
+    <TextView
+        android:id="@+id/tvlastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Last Name:"
+        android:textSize="15dp"
+
+        ></TextView>
+    <TextView
+        android:id="@+id/tvemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email:"
+        android:textSize="15dp"
+
+        ></TextView>
+
+
+
+</LinearLayout>

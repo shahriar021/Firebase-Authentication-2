@@ -1,9 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:layout_gravity="center">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="login Form"
+        android:textSize="55dp"
+        android:gravity="center">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/etloginemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email">
+
+    </EditText>
+    <EditText
+        android:id="@+id/etloginpassowrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnloginform"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        ></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No account?">
+
+    </TextView>
+    <Button
+        android:id="@+id/btnregisterfromlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="register"
+        ></Button>
+
+
+
+
+</LinearLayout>
